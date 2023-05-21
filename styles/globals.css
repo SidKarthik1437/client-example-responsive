@@ -1,26 +1,38 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-pagination-bullet-active {
+  color: rgb(255, 255, 255) !important;
+  background: #fcfcfc96 !important;
+}
+.swiper-pagination-bullet {
+  color: rgb(255, 255, 255) !important;
+  background: #fcfcfc96 !important;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.swiper-button-next, .swiper-button-prev {
+  background: rgb(255, 255, 255);
+  border-radius: 100%;
+  width: 100px !important; 
+  height: 100px !important;
+  /* padding: 50px; */
+  scale: 40%;
+  top: 40% !important;
+  right: -7% !important;
+  
+  display: flex !important;
 }
 
-* {
-  box-sizing: border-box;
+.swiper-button-prev{
+left: -7% !important;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.swiper-button-next, .swiper-button-prev::after {
+  content: 'next';
+   /* width: 100px !important; 
+  height: 100px !important; */
+  
+}
+.mySwiper {
+  background: #000;
 }
