@@ -7,8 +7,9 @@ import Card from "../components/Card";
 import { useSwiper } from "swiper/react";
 
 export default function Home() {
+  const swiper = useSwiper();
   return (
-    <div className="flex flex-col w-full h-full items-center justify-centers scrollbar-thin">
+    <div className="flex flex-col w-full h-full items-center justify-center overflow-y-scroll overflow-x-hidden scrollbar-none">
       <Head>
         <title>Assignment</title>
         <meta name="description" content="Assignment For Client" />
@@ -20,7 +21,7 @@ export default function Home() {
 
       <section
         className="w-full h-auto select-none
-      grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
+      grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4
       gap-4 p-4 overflow-y-scroll scroll-smooth scrollbar-thin
       lg:px-40
       "
@@ -42,14 +43,14 @@ export default function Home() {
         <Card />
         <Card />
       </section>
-      <footer className="flex flex-col lg:flex-row w-full gap-y-10 lg:h-96 bg-[#0A0A0A] mt-10 text-white lg:items-center justify-around px-20">
+      <div className="flex flex-col lg:flex-row w-full gap-y-10 lg:h-96 bg-[#0A0A0A] mt-10 text-white lg:items-center justify-around p-20">
         {/* <div className="flex w-full "> */}
-        <div className="flex flex-col gap-y-4 pt-10">
+        <div className="flex flex-col gap-y-4">
           <div className="flex items-center gap-x-1">
             <span className="w-10 h-10 bg-[#ED0641] rounded-full"></span>
             <span className="text-2xl font-semibold">Logoipsum</span>
           </div>
-          <div className="w-96">
+          <div className="w-72 lg:w-96">
             Lorem ipsum dolor sit amet consectetur. Leo lorem consequat
             scelerisque quis eu. Dolor nulla cursus eu in velit viverra. A sed
             pellentesque aenean ultrices eu nisl lorem. Tristique interdum donec
@@ -156,9 +157,8 @@ export default function Home() {
           <span>Location</span>
           <span>Contact Number</span>
           <span>Email</span>
-          <span>&nbsp;</span>
         </div>
-      </footer>
+      </div>
       {/* </div> */}
     </div>
   );

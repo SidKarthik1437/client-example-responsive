@@ -3,7 +3,7 @@ import React from "react";
 function SubHeader() {
   return (
     <div className="flex w-screen h-32 bg-white items-center justify-center self-center border-t">
-      <div className="flex w-10/12 h-full mt-5 items-center justify-evenly overflow-x-scroll gap-x-4 lg:px-10 bg-white scrollbar-thin transition-all duration-100 ease-in-out scroll-smooth">
+      <div className="flex w-10/12 h-full mt-5 items-center justify-evenly overflow-x-scroll gap-x-4 pl-96 md:pl-20 lg:pl-0 px-10 bg-white scrollbar-thin transition-all duration-100 ease-in-out scroll-smooth">
         <div className="flex flex-col h-20 justify-around text-sm items-center text-[#6B7280] hover:text-[#ED0641] transition-all duration-100 ease-in-out ">
           <svg
             width="22"

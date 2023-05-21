@@ -2,8 +2,8 @@ import React from 'react'
 
 function Header() {
     return (
-      <div className="flex w-full h-[136px] bg-white items-center justify-around self-center shadow sticky top-0 z-20">
-        <div className="hidden md:flex items-center gap-x-1">
+      <div className="flex flex-col md:flex-row w-full h-[136px] bg-white items-center justify-around self-center shadow sticky top-0 z-20">
+        <div className="flex items-center gap-x-1">
           <span className="w-10 h-10 bg-[#ED0641] rounded-full"></span>
           <span className="text-2xl font-semibold">Logoipsum</span>
         </div>
